@@ -3,7 +3,8 @@ let stringInput, numRectsSlider, numRectsValue, decryptedMessage, saveButton;
 let numRects = 4;
 
 function setup() {
-  let canvas = createCanvas(640, 640);
+  let s=min(windowWidth,windowHeight)
+  let canvas = createCanvas(s/2, s/2);
   canvas.parent("canvas-container");
   frameRate(1);
 
