@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <header>
+      <h1>String to Binary to Image Encrypter/Decrypter</h1>
+    </header>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <main>
+      <div>
+        <label for="string-input">Enter message:</label>
+        <input type="text" id="string-input" value="Hello World!" />
+      </div>
+      <div>
+        <label for="num-rects-slider">
+          Set Number of Rows and Columns (Must be a power of 2 for accurate
+          decryption)</label
+        >
+        <input
+          type="range"
+          id="num-rects-slider"
+          name="num-rects-slider"
+          min="2"
+          max="8"
+          step="1"
+          value="4"
+        />
+        <span id="num-rects-value">Resolution : 16x16</span>
+        <p id="decrypted-message"></p>
+      </div>
+      <div id="canvas-container"></div>
+      <button id="save-button">Save as PNG</button>
+    </main>
+    <script src="sketch.js"></script>
+  </body>
+</html>
