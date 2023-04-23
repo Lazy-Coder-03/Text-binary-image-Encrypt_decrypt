@@ -16,7 +16,8 @@ function setup() {
   saveButton = document.getElementById("save-button");
 
   // Set the initial values of the HTML elements
-  stringInput.value = "www.github.com/lazy-coder-03";
+  //stringInput.value = "www.github.com/lazy-coder-03";
+  stringInput.value = "Hello World!"
   numRectsSlider.value = numRects;
 
   // Add event listeners to the HTML elements
